@@ -1,0 +1,39 @@
+/* Apply styles to the mat-tab-group */
+.mat-tab-group {
+  /* Add any custom styles for the mat-tab-group here */
+}
+.mat-tab-body-content {
+  max-height: 300px; /* Set the maximum height for the tab content to be scrollable */
+  overflow-y: auto; /* Enable vertical scrolling when tab content overflows */
+}
+
+/* Apply styles to the tab labels */
+.mat-tab {
+  position: relative;
+  padding: 0 16px;
+  cursor: pointer;
+  font-weight: bold; /* Example: Apply bold font weight to the tab labels */
+}
+
+/* Underline styles for the tab labels */
+.mat-tab::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff;
+  opacity: 0; /* Initially set the underline to be invisible */
+}
+
+/* Show underline on hover */
+.mat-tab:hover::after {
+  opacity: 1; /* Show the underline on hover */
+}
+
+/* Show underline for the active tab */
+.mat-tab-label-active::after {
+  opacity: 1;
+  height: 4px;
+}
