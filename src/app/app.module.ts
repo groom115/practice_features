@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { TabBarComponent } from './tab-bar/tab-bar.component';
+import { TailwindComponent } from './tailwind/tailwind.component';
 
 @NgModule({
-  declarations: [AppComponent, TabBarComponent],
+  declarations: [AppComponent, TabBarComponent, TailwindComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
